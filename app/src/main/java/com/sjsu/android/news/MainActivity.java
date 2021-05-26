@@ -29,7 +29,7 @@ import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener{
 
-    public static final String API_KEY = "1bf99c319df74b57b037cac7e522a6a6";
+    public static final String API_KEY = "6a073835907f48b2b681f6ab1d4b02b5";
     private RecyclerView recyclerView;
     private RecyclerView.LayoutManager layoutManager;
     private List<Article> articles = new ArrayList<>();
@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
 
             topHeadlines.setVisibility(View.VISIBLE);
 
-            call = apiInterface.getNews("in",API_KEY);
+            call = apiInterface.getNews("us",API_KEY);
 
         }
 
